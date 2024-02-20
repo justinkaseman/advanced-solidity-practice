@@ -1,0 +1,5 @@
+A sandwich attack is where the attacker finds pending transaction in the network's mempool and places orders right before and after the targeted transaction. This raises the price for the victim's transaction away from the epxpected expected price, also called slippage. The value gained by the attacker is called Miner Extracted Value (MEV).
+
+There are also other forms of MEV such as back-running, which is useful in DeFi for stability. The MEV is extraced by arbitrage bots.
+
+To prevent frontrunning, the user can define a slippage tolerance. For example on Curve.fi the user specifies the minmimum number of tokens that they are willing to receive for adding liquidity. A usual recomendded slippage tolerance is about 0.5-1%. If the slippage is too low, this might result in a failed transactions that waste gas.
